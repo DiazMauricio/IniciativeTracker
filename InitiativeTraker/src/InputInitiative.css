@@ -1,0 +1,19 @@
+.InputInitiative{
+ display: flex;
+ gap: 5px;
+ margin-bottom: 10px;
+}
+.InputInitiative input{
+ margin: 0;
+ border: none;
+ height: 25px;
+ font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ font-size: 1em;
+
+}
+.InputInitiative input.text{
+   padding-left: 10px;
+}
+.InputInitiative input.Initiative{
+   width: 50px;
+}

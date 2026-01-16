@@ -1,0 +1,12 @@
+.InputControls{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin-right: 1em;
+}
+.InputControls .Logo{
+    width: 40px;
+    margin: 1em auto;
+}

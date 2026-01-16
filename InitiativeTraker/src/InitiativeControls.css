@@ -1,0 +1,12 @@
+.controls button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls .show-button *{
+    fill:#6e6e6e
+}
+
+.controls .show-button.active *{
+    fill:#1a1a1a
+}
