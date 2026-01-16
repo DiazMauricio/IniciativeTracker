@@ -1,6 +1,7 @@
 import InitiativesControls from "./InitiativesControls";
 import DisplayInitiatives from "./DisplayInitiatives";
 import { useState } from "react";
+import NewWindow from "react-new-window";
 
 const InitiativeWindows = ({ initiatives }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,12 +38,14 @@ const InitiativeWindows = ({ initiatives }) => {
         showActive={showActive}
         show={show}
       />
-      <div className={`column display ${show ? "show" : ""}`}>
-        <DisplayInitiatives
-          initiatives={initiatives}
-          activeInitiative={activeIndex}
-        />
-      </div>
+      <NewWindow title="Initiative" features={{ width: 400, height: 2080 }}>
+        <div className={`column display ${show ? "show" : ""}`}>
+          <DisplayInitiatives
+            initiatives={initiatives}
+            activeInitiative={activeIndex}
+          />
+        </div>
+      </NewWindow>
     </div>
   );
 };

@@ -16,9 +16,10 @@
   flex-direction: column;
 }
 .display{
-  width: 300px;
+  width: 100%;
+  height: 100vh;
   background-color: #00ff00;
-  padding: 2em 0em 2em 4em;
+  /* padding: 2em 0em 2em 4em; */
   overflow: hidden;
 }
 .controls{
