@@ -1,0 +1,14 @@
+.ScenePicker {
+  display: flex;
+  flex-direction: column;
+}
+.ScenePicker button {
+  font-size: 0.8em;
+  width: 200px;
+  text-align: left;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.ScenePicker .selected {
+  background-color: #646cff;
+}

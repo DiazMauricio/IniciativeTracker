@@ -1,12 +1,15 @@
 import InitiativeBanner from "./InitiativeBanner";
 import "./DisplayInitiative.css";
+import { useInitiative } from "./context/InitiativeContext";
 
-const DisplayInitiatives = ({ initiatives, activeInitiative }) => {
+const DisplayInitiatives = () => {
+  const { initiatives, activeIndex, show } = useInitiative();
+
   const sortedInitiatives = [...initiatives].sort(
-    (a, b) => b.initiative - a.initiative
+    (a, b) => b.initiative - a.initiative,
   );
   return (
-    <div className="DisplayInitiative">
+    <div className={show ? "DisplayInitiative show" : "DisplayInitiative"}>
       {sortedInitiatives.map((item, index) => {
         if (item.initiative !== "") {
           return (
@@ -16,7 +19,7 @@ const DisplayInitiatives = ({ initiatives, activeInitiative }) => {
               name={item.name}
               color={item.color}
               isPJ={item.isPJ}
-              active={activeInitiative == index}
+              active={activeIndex == index}
             />
           );
         }

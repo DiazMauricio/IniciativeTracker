@@ -1,48 +1,58 @@
 #root {
   position: relative;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   height: 100vh;
-  }
-.app{
+  --color-1: #313131;
+  --color-2: #000000;
+  --color-3: #dcdcdc;
+  --color-4: #646cff;
+  --color-5: #1a1a1a;
+  --color-6: #484848;
+}
+.app {
   display: flex;
-  justify-content: space-between;
+  gap: 1em;
   width: 100%;
   height: 100%;
 }
-.column:nth-child(1){
+.line-v {
+  width: 1px;
+  background-color: var(--color-6);
+  margin: 0 0.5em;
+}
+.column:nth-child(1) {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
-.display{
+.display {
   width: 100%;
   height: 100vh;
-  background-color: #00ff00;
+  background-color: var(--color-2);
   /* padding: 2em 0em 2em 4em; */
   overflow: hidden;
 }
-.controls{
+.controls {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
   padding: 0em 4em;
 }
-.show-button{
-  background-color: #313131;
-
+.show-button {
+  background-color: var(--color-1);
 }
-.show-button.active{
-  background-color: #dcdcdc;
-  color: #000;
+.show-button.active {
+  background-color: var(--color-3);
+  color: var(--color-2);
 }
 
-.Inputs-container{
+.Inputs-container {
   display: flex;
   flex-direction: row;
 }
-.Inputs{
+.Inputs {
   display: flex;
   flex-direction: column;
   gap: 0em;

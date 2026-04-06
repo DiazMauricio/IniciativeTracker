@@ -1,6 +1,12 @@
-.DisplayInitiative{
-    margin: 2em 0;
-    display: flex;
-    flex-direction: column; 
-    align-items: end;
+.DisplayInitiative {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }

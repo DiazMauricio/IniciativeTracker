@@ -1,12 +1,30 @@
-.controls button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.controls .show-button *{
-    fill:#6e6e6e
+.show-button * {
+  fill: #6e6e6e;
 }
 
-.controls .show-button.active *{
-    fill:#1a1a1a
+.show-button.active * {
+  fill: #1a1a1a;
+}
+.InputsButtons {
+  display: flex;
+  flex: 1;
+  gap: 4px;
+  padding-bottom: 1em;
+}
+.InputsButtons button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.InputsButtons svg {
+  --iconSize: 18px;
+  height: var(--iconSize);
+  width: var(--iconSize);
 }

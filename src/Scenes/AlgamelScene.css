@@ -1,0 +1,159 @@
+.algamel {
+  overflow: hidden;
+}
+.algamel > * {
+  position: absolute;
+  width: 100%;
+}
+.algamel .buttons {
+  bottom: 0;
+}
+.algamel button {
+  background-color: none;
+  color: #333;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+.algamel .marks-container {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  margin: 5vh 10vw;
+  max-width: 70%;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(20px);
+}
+
+.algamel .marks-container .row {
+  display: flex;
+  justify-content: stretch;
+  gap: 0.5em;
+  margin: 0 2em;
+  height: 5em;
+}
+
+.algamel .cell {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.algamel .PlayerCell {
+  background-color: black;
+  --c: #333;
+  border-bottom: solid 4px var(--c);
+}
+.algamel .MarkCell {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  --text-color: #ffb300;
+  color: var(--text-color);
+  background-color: #000000d0;
+  box-shadow: 0px 0px 15px 1px #ffd5006b;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.algamel .MarkCell.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.algamel .MarkCell * {
+  padding: 0;
+  margin: 2px;
+  fill: var(--text-color);
+}
+.algamel .MarkCell.fill {
+  background-color: rgb(152, 95, 10);
+}
+.algamel .marks-container.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* animaciones */
+
+.algamel .grow {
+  animation: grow 10s ease-in-out infinite alternate;
+}
+.apear {
+  opacity: 0;
+  animation: apear 1s ease-in-out forwards;
+}
+.expand {
+  animation: expand 13s ease-in-out infinite alternate;
+}
+.Paralax {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: solid 5vh black;
+  border-left: 0;
+  border-right: 0;
+}
+.grow-s {
+  animation: grow-s 20s ease-in-out infinite alternate;
+}
+
+@keyframes grow-s {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  56% {
+    transform: scale(1.05) translate(3px, -3px);
+  }
+  to {
+    transform: scale(0.98) translate(-4x, 2px);
+  }
+}
+@keyframes expand {
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.01, 0.95);
+  }
+  55% {
+    transform: scale(1.05, 1.01);
+  }
+  76% {
+    transform: scale(1, 0.95);
+  }
+  100% {
+    transform: scale(0.95, 1.02);
+  }
+}
+
+@keyframes apear {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  60% {
+    transform: scale(1.1) translate(10px, -6px);
+  }
+  to {
+    transform: scale(1.15) translate(-8px, -5px);
+  }
+}

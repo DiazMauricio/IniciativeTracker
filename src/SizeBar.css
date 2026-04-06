@@ -1,0 +1,12 @@
+.SizeBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #1a1a1a;
+  height: 100vh;
+  padding: 0 0.5em;
+}
+.SizeBar .Logo {
+  width: 40px;
+  margin: 1em auto;
+}

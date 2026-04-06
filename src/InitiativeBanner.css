@@ -1,43 +1,43 @@
-.InitiativeBanner{
-    display: flex;
-    align-items: center;
-    height: 45px;
-    width: 200px;
-    border-radius: 10px 0px 0px 10px;
-    text-transform: uppercase;
-    font-weight: 0;
-    transform-origin: 100% 50%;
-    transform: scale(.8);
-    transition: all 0.3s ease;
+.InitiativeBanner {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 200px;
+  border-radius: 10px 0px 0px 10px;
+  text-transform: uppercase;
+  font-weight: 0;
+  transform-origin: 100% 50%;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
 }
-.InitiativeBanner .banner{
-    position: absolute;
-    flex: 1;
-    width: 100%;
-    height: 50x;
-    z-index: -1;
+.InitiativeBanner .banner {
+  position: absolute;
+  flex: 1;
+  width: 100%;
+  height: 50x;
+  z-index: -1;
 }
-.InitiativeBanner .name{
-    margin-left: 60px
-}
-
-.color-bar{
-    border-radius: 10px 0px 0px 10px;
-    width: 20px;
+.InitiativeBanner .name {
+  margin-left: 60px;
 }
 
-.InitiativeBanner.active{
-    transform: scale(1);
+.color-bar {
+  border-radius: 10px 0px 0px 10px;
+  width: 20px;
 }
-.show-container{
-    transition: transform 0.5s ease;
+
+.InitiativeBanner.active {
+  transform: scale(1);
 }
-.show .show-container{
-    transform: translate(200px);
+.show-container {
+  transition: transform 0.5s ease;
 }
-.pj .name{
-    color: #000;
+.show .show-container {
+  transform: translate(200px);
 }
-.pj .label{
-    fill: #d8d8d8;
+.pj .name {
+  color: #000;
+}
+.pj .label {
+  fill: #ffffff;
 }
