@@ -6,6 +6,7 @@ import EaselNoche from "../assets/images/EaselBgAnochecer.png";
 import EaselAmanecer from "../assets/images/EaselBgAmanecer.png";
 import EaselGris from "../assets/images/EaselBgGrey.png";
 import EaselRojo from "../assets/images/EaselBgRed.png";
+import EaselChase from "../assets/images/EaselChase.png";
 import AlgamelScene from "../Scenes/AlgamelScene";
 import MainScene from "../Scenes/MainScene";
 
@@ -43,6 +44,10 @@ const scenes = [
   {
     title: "Algamel",
     scene: <AlgamelScene key={7} />,
+  },
+  {
+    title: "Chase",
+    scene: <SimpleScene key={8} src={EaselChase} />,
   },
 ];
 
